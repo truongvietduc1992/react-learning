@@ -1,9 +1,11 @@
 
 import './style.css';
 const MyComponent = () => {
+
+    const vduc = [1, 2, 3];
     return (
         <>
-            <div> Truong Viet</div>
+            <div> {vduc}Truong Viet</div>
             <div className='child'
                 style={
                     { borderRadius: "3000px" }

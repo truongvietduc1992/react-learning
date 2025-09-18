@@ -1,0 +1,85 @@
+.todo-title {
+    font-size: 35px;
+    color: rgba(199, 136, 20, 0.945);
+    text-align: center;
+    font-weight: 5000;
+}
+
+.todo-container {
+    margin: 50px auto;
+    width: 600px;
+}
+
+.todo-new {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.todo-data {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 
+.todo-image {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.todo-image:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.todo-image.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .todo-image {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+
+.todo-image {
+    width: 100px;
+    /* Thay đổi kích thước logo theo nhu cầu */
+    height: 100px;
+    /* Thay đổi kích thước logo theo nhu cầu */
+    border-radius: 50%;
+    /* Đảm bảo logo là hình tròn nếu nó có hình vuông */
+    animation: rotateCircle 5s linear infinite;
+    /* Thực hiện xoay vô tận */
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+        /* Bắt đầu với góc xoay 0 độ */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* Xoay hết 360 độ */
+    }
+}
