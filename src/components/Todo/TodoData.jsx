@@ -1,9 +1,20 @@
-const TodoData = () => {
+const TodoData = (props) => {
+
+
+
+    const { name, age, data } = props;
+
+    console.log(">>>check props:", props)
     return (
+
         <div className='todo-data'>
-            Learning React<br />
-            Watching Youtube<br />
-            Reading news
+            <div>My name is {name}</div>
+            <div> Learning React</div>
+            <div> Watching Youtube</div>
+            <div> Reading news</div>
+            <div>
+                {JSON.stringify(props.todoList)}
+            </div>
         </div>
     )
 }
